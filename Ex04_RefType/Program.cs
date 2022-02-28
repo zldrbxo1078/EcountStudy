@@ -33,7 +33,12 @@ namespace Ex04_RefType
             Test test3 = new Test();
             test3.print();
 
-            
+            //test, test2, test3 >> 참조타입(변수가 주소값을 가지고 있다.)
+
+            for(int i=0; i < 10; i++)   //block variable /for문과 함께 생성 및 소멸
+            {
+
+            }
         }
     }
 }
