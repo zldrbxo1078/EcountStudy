@@ -58,6 +58,7 @@ namespace Ex05_ValueType
             Car car2 = car;
             car2.name = "newOne";
             car2.price = 5000;
+
             Console.WriteLine("car  {0} : {1}", car.name, car.price);
             Console.WriteLine("car2 {0} : {1}", car2.name, car2.price);
             //같은 주소값을 가진다. 주소값 참조
@@ -93,7 +94,16 @@ namespace Ex05_ValueType
             Console.WriteLine(num3);
             //큰 타입 -> 작은 타입 변환 시 손실을 감안해야 한다.
 
-            
+            var name = "문자열";   //string
+            Console.WriteLine(name.GetType());
+            var version = 8.0;    //double
+            Console.WriteLine(version.GetType());
+
+            int i2 = default;   //타입 기본값
+            Console.WriteLine(i2);
+
+            double d2 = default;
+            Console.WriteLine(d2);
         }
     }
 }
