@@ -24,7 +24,6 @@ namespace Ex01_basic
 
             char d;
             d = '나';
-            Console.WriteLine("c:{0}, d:{1}", c, d);
 
             //지역변수는 반드시 [초기화]를 통해서 사용한다.
             short s = 10000;
