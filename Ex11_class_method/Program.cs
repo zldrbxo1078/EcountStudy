@@ -22,7 +22,27 @@ namespace Ex11_class_method
         }
         public void callMethod2(int a)
         {
-
+            if (i < 10)
+            {
+                Console.WriteLine("...");
+            }
+            else
+            {
+                Console.WriteLine("<<<<<");
+            }
+        }
+        public string callMethod3()
+        {
+            return "타입만 동일";
+        }
+        public string callMethod4(string str)
+        {
+            return str + "방가";
+        }
+        //추가
+        public int callMethod5(int i, int j, int k)
+        {
+            return i + j + k;
         }
     }
     class Program
@@ -31,6 +51,13 @@ namespace Ex11_class_method
         {
             Test test = new Test();
             test.callMethod();
+            test.callMethod2(5);
+            string result = test.callMethod3();
+            Console.WriteLine(result);
+            result = test.callMethod4("규태님!");
+            Console.WriteLine(result);
+            int value = test.callMethod5(1, 2, 3);
+            Console.WriteLine(value);
         }
     }
 }
