@@ -6,6 +6,18 @@ using System.Threading.Tasks;
 
 namespace Ex11_class_method
 {
+    public class Member
+    {
+        
+        private string name;
+        public Member(string name)
+        {
+            this.name = name; 
+        }
+        
+    }
+    //type없이 default 타입으로 생성가능
+
     //설계도(class) : 속성 + 기능
     //기능 == 행위 == , method(함수)
     class Test
@@ -15,7 +27,7 @@ namespace Ex11_class_method
         //void, parameter(x)    ex) public void m(){}
         //void, parameter(o)    ex) public void m(int a){}
         //return, parameter(x)  ex) public int m(){return result;}
-        //return, parameter(x)  ex) public int m(int a){return result;}
+        //return, parameter(o)  ex) public int m(int a){return result;}
         public void callMethod()
         {
             Console.WriteLine("일반함수");
@@ -44,6 +56,7 @@ namespace Ex11_class_method
         {
             return i + j + k;
         }
+        
     }
     class Program
     {
@@ -58,6 +71,9 @@ namespace Ex11_class_method
             Console.WriteLine(result);
             int value = test.callMethod5(1, 2, 3);
             Console.WriteLine(value);
+
+            Member member = new Member("규태");
+            Member member2 = new Member("상윤");
         }
     }
 }
