@@ -51,6 +51,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex_22_ArrayQuiz", "Ex_22_Ar
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex23_Array_Cinema", "Ex23_Array_Cinema\Ex23_Array_Cinema.csproj", "{CCD7C197-B202-4E65-96FC-DC5365A65982}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DayQuiz", "DayQuiz\DayQuiz.csproj", "{54C23C8A-CACE-4A66-80F6-9AEF54ADF230}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex24_Array_Param", "Ex24_Array_Param\Ex24_Array_Param.csproj", "{56429D3C-D858-4139-8691-BA6EF22A252E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -153,6 +157,14 @@ Global
 		{CCD7C197-B202-4E65-96FC-DC5365A65982}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CCD7C197-B202-4E65-96FC-DC5365A65982}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CCD7C197-B202-4E65-96FC-DC5365A65982}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54C23C8A-CACE-4A66-80F6-9AEF54ADF230}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54C23C8A-CACE-4A66-80F6-9AEF54ADF230}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54C23C8A-CACE-4A66-80F6-9AEF54ADF230}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54C23C8A-CACE-4A66-80F6-9AEF54ADF230}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56429D3C-D858-4139-8691-BA6EF22A252E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56429D3C-D858-4139-8691-BA6EF22A252E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56429D3C-D858-4139-8691-BA6EF22A252E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56429D3C-D858-4139-8691-BA6EF22A252E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
