@@ -43,27 +43,27 @@ namespace Ex03
     }
     class Point
     {
-        private int x, y;
+        public int x, y;
 
         
 
         public Point()
         {
-            this.X = 0;
-            this.Y = 0;
+            x = 0;
+            y = 0;
         }
         public Point(int x, int y)
         {
-            this.X = x;
-            this.Y = y;
+            this.x = x;
+            this.y = y;
         }
 
-        public int X { get => x; set => x = value; }
-        public int Y { get => y; set => y = value; }
+        //public int X { get => x; set => x = value; }
+        //public int Y { get => y; set => y = value; }
 
         public void showPoint()
         {
-            Console.WriteLine("도형의 좌표 : {0} , {1}", X, Y);
+            Console.WriteLine("도형의 좌표 : {0} , {1}", x, y);
         }
     }
 
@@ -108,12 +108,12 @@ namespace Ex03
         
         public Triangle()
         {
-            pointS = new Point[3];
+            pointS = new Point[3] { new Point(1, 2), new Point(3, 4), new Point(5, 6) };
             
         }
         public Triangle(Point[] point) //주의!!
         {
-            this.pointS = new Point[3] { new Point(1,2), new Point(3, 4), new Point(5, 6) } ;
+            this.pointS = pointS;
         }
 
         public void squarePrint()
@@ -140,6 +140,7 @@ namespace Ex03
             Point[] pointarr = new Point[] { new Point(10,20), new Point(30, 40), new Point(50, 60), };
             t.draw();
             t.squarePrint();
+
             Triangle t2 = new Triangle(pointarr);
         }
     }
