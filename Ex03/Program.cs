@@ -79,6 +79,10 @@ namespace Ex03
     {
         Point pCir;
         int radius;
+
+        //문제점 : 각각의 생성자에 member field에 할당 작업을 반복적으로 하고 있다.. 고민
+        //answer : this
+
         public Circle()
         {
             pCir = new Point(10, 15);
@@ -113,7 +117,7 @@ namespace Ex03
         }
         public Triangle(Point[] point) //주의!!
         {
-            this.pointS = pointS;
+            this.pointS = point;
         }
 
         public void squarePrint()
@@ -137,11 +141,16 @@ namespace Ex03
             circle2.circlePrint();
 
             Triangle t = new Triangle();
-            Point[] pointarr = new Point[] { new Point(10,20), new Point(30, 40), new Point(50, 60), };
             t.draw();
             t.squarePrint();
 
+            Point[] pointarr = new Point[3] { new Point(10,20), new Point(30, 40), new Point(50, 60) };
             Triangle t2 = new Triangle(pointarr);
+            t2.draw();
+            t2.squarePrint();
+            Triangle t3 = new Triangle(new Point[3] { new Point(10, 20), new Point(30, 40), new Point(50, 60) });
+            t3.draw();
+            t3.squarePrint();
         }
     }
 }
