@@ -82,11 +82,18 @@ namespace hw_CartQuiz
     //구매자
     class Buyer
     {
-        private int money = 1000;
+        private int money;
         private int bonuspoint;
-        public Product[] cart;
+        private Product[] cart;
+        private int count;
 
-
+        public Buyer() : this(1000) { }
+        public Buyer(int money)
+        {
+            this.money = money;
+            count = 0;
+            cart = new Product[10];
+        }
         //hint)
         //오버로딩 개념
         //다형성 개념
@@ -99,49 +106,63 @@ namespace hw_CartQuiz
         //단 product 는 자신의 자원 볼 수 있다 (
 
         public void Buy(Product n)
-        {  //함수가 제품 객체의 주소를  parameter  받아서 가격 ,포인트
-            if (this.money < n.price)
+        {  
+            if (count > 9)
             {
-                Console.WriteLine("고객님 잔액이 부족합니다 ^^! " + this.money);
-                return; //함수 종료  (구매행위 종료)
+                Console.WriteLine("장바구니가 꽉 찼습니다!");
             }
-            //실 구매 행위
-            this.money -= n.price; //잔액
-            this.bonuspoint += n.bonuspoint; //누적
-            Console.WriteLine("구매한 물건은 :" + n.ToString());
+            else
+            {
+                cart[count++] = n;
+            }
         }
-        public void summary(Cart c)
+        public void summary()
         {
             int priceSum = 0;
-            for (int i = 0; i < c.shoplist.Length; i++)
+            for (int i = 0; i < count; i++)
             {
-                priceSum += c.shoplist[i].price;
+                Console.WriteLine($"구매한 물건은 {cart[i].ToString()}");
+                priceSum += cart[i].price;
+                this.bonuspoint += cart[i].bonuspoint;
             }
-            Console.WriteLine($"총합은 : {priceSum}원 입니다.");
+            this.money -= priceSum;
+            if (money < priceSum)
+            {
+                Console.WriteLine("잔액이 부족합니다.ㅠ");
+            }
+            else
+            {
+                Console.WriteLine($"총합은 : {priceSum}원 입니다.");
+                Console.WriteLine($"남은 잔액은 : {this.money}입니다.");
+                Console.WriteLine($"현재 포인트 : {this.bonuspoint}");
+            }
         }
+       
 
-    }
-    class Cart
-    {
-        static int count = 0;
-        public Product[] shoplist;
-        
-        public void addcart(Product p) { 
-            shoplist[count] = p;
-            count++;
-        }
-
-    }
-    class Program
-    {
-        static void Main(string[] args)
+        class Program
         {
-            Cart c1 = new Cart();
-            c1.addcart(new Audio());
-            c1.addcart(new NoteBook());
-            c1.addcart(new KtTv());
-            Buyer buyer = new Buyer();
-            buyer.summary(c1);
+            static void Main(string[] args)
+            {
+                Buyer buyer = new Buyer(10000);
+                buyer.Buy(new Audio());
+                buyer.Buy(new NoteBook());
+                buyer.Buy(new KtTv());
+                buyer.Buy(new KtTv());
+                buyer.Buy(new KtTv());
+                buyer.summary();
+
+                Buyer b2 = new Buyer();
+                b2.Buy(new NoteBook());
+                b2.Buy(new KtTv());
+                b2.Buy(new KtTv());
+                b2.summary();
+
+                Buyer b3 = new Buyer(5000);
+                for (int i = 0; i < 11; i++)
+                {
+                    b3.Buy(new Audio());
+                }
+            }
         }
     }
 }
