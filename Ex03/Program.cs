@@ -34,7 +34,7 @@ namespace Ex03
     {
         // 공통 속성, 함수
         public string color = "gold";
-        public void draw()
+        public virtual void draw()
         {
             Console.WriteLine("도형을 그리다.");
         }
@@ -47,10 +47,9 @@ namespace Ex03
 
         
 
-        public Point()
+        public Point() :this(0,0)
         {
-            x = 0;
-            y = 0;
+            
         }
         public Point(int x, int y)
         {
@@ -75,6 +74,7 @@ namespace Ex03
     //3.2 점의 좌표는 초기값 10,15
     //3.3 
 
+
     class Circle : Shape
     {
         Point pCir;
@@ -83,10 +83,8 @@ namespace Ex03
         //문제점 : 각각의 생성자에 member field에 할당 작업을 반복적으로 하고 있다.. 고민
         //answer : this
 
-        public Circle()
+        public Circle() : this(new Point(10,15), 10)
         {
-            pCir = new Point(10, 15);
-            radius = 10;
         }
         public Circle(Point point, int rad) //주의!!
         {
@@ -99,8 +97,37 @@ namespace Ex03
             pCir.showPoint();
             Console.WriteLine("반지름 : {0}", this.radius);
         }
-    }
 
+        public override void draw()
+        {
+            Console.WriteLine("원을 그리다");
+        }
+    }
+    //class Circle : Shape
+    //{ //상속
+    //    private Point point; //포함 (다른 클래스 타입을 member field 로 가지는 것) ******
+    //    private int r; //특수화
+
+    //    //문제점 : 각각의 생성자에 member field 에 할당 작업을 반복적으로 하고 있다 .... 고민.....
+    //    //답안지 : this 
+
+    //    public Circle() : this(10,new Point(10,15))
+    //    {
+
+    //    }
+
+    //    public Circle(int r, Point point)
+    //    {
+    //        this.r = r;
+    //        this.point = point;
+    //    }
+
+    //    public void circlePrint()
+    //    {
+    //        Console.WriteLine("반지름 : {0} , 좌표값 : {1},{2}", r, point.x, point.y);
+    //    }
+
+    //}
     //문제2)
     //삼각형 클래스를 만드세요
     //삼각형의 정의는 3개의 점과 색상과 draw 기능을 가지고 있다.
@@ -109,11 +136,10 @@ namespace Ex03
     class Triangle : Shape
     {
         Point[] pointS;
-        
-        public Triangle()
+
+        public Triangle() : this(new Point[3] { new Point(1, 2), new Point(3, 4), new Point(5, 6) })
         {
-            pointS = new Point[3] { new Point(1, 2), new Point(3, 4), new Point(5, 6) };
-            
+
         }
         public Triangle(Point[] point) //주의!!
         {
@@ -126,6 +152,12 @@ namespace Ex03
             {
                 pointS[i].showPoint();
             }
+        }
+
+        public override void draw()
+        {
+            //base.draw();
+            Console.WriteLine("삼각형을 그리다");
         }
     }
     internal class Program
