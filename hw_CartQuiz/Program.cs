@@ -110,15 +110,38 @@ namespace hw_CartQuiz
             this.bonuspoint += n.bonuspoint; //누적
             Console.WriteLine("구매한 물건은 :" + n.ToString());
         }
-        public void summary()
+        public void summary(Cart c)
         {
-
+            int priceSum = 0;
+            for (int i = 0; i < c.shoplist.Length; i++)
+            {
+                priceSum += c.shoplist[i].price;
+            }
+            Console.WriteLine($"총합은 : {priceSum}원 입니다.");
         }
+
+    }
+    class Cart
+    {
+        static int count = 0;
+        public Product[] shoplist;
+        
+        public void addcart(Product p) { 
+            shoplist[count] = p;
+            count++;
+        }
+
     }
     class Program
     {
         static void Main(string[] args)
         {
+            Cart c1 = new Cart();
+            c1.addcart(new Audio());
+            c1.addcart(new NoteBook());
+            c1.addcart(new KtTv());
+            Buyer buyer = new Buyer();
+            buyer.summary(c1);
         }
     }
 }
