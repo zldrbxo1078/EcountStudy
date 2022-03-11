@@ -50,7 +50,8 @@ namespace Ex02_ArrayList2
             Console.Write("   Values:");
             PrintValues(myAL);
 
-            
+            myAL.Insert(1, "fox!!!!!!");
+            PrintValues(myAL);
         }
     }
 }
