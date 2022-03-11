@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex01ArrayList", "Ex01ArrayL
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex02_ArrayList2", "Ex02_ArrayList2\Ex02_ArrayList2.csproj", "{696FCC8D-D4D9-4533-B350-F3E9A721DCCD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hw_Bank", "Hw_Bank\Hw_Bank.csproj", "{8CA8D018-B1CC-4196-A4C6-9A178DE9AB72}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{696FCC8D-D4D9-4533-B350-F3E9A721DCCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{696FCC8D-D4D9-4533-B350-F3E9A721DCCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{696FCC8D-D4D9-4533-B350-F3E9A721DCCD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8CA8D018-B1CC-4196-A4C6-9A178DE9AB72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CA8D018-B1CC-4196-A4C6-9A178DE9AB72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CA8D018-B1CC-4196-A4C6-9A178DE9AB72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CA8D018-B1CC-4196-A4C6-9A178DE9AB72}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
