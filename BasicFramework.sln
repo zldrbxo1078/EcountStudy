@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.32126.315
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32210.238
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex01_basic", "Ex01_basic\Ex01_basic.csproj", "{3E6AC103-978B-428F-97E9-B78B4A5E9309}"
 EndProject
@@ -54,6 +54,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DayQuiz", "DayQuiz\DayQuiz.csproj", "{54C23C8A-CACE-4A66-80F6-9AEF54ADF230}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex24_Array_Param", "Ex24_Array_Param\Ex24_Array_Param.csproj", "{56429D3C-D858-4139-8691-BA6EF22A252E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lotto", "Lotto\Lotto.csproj", "{BB378C30-3274-4322-9C34-D0545F417EC8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -165,6 +167,10 @@ Global
 		{56429D3C-D858-4139-8691-BA6EF22A252E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{56429D3C-D858-4139-8691-BA6EF22A252E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{56429D3C-D858-4139-8691-BA6EF22A252E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB378C30-3274-4322-9C34-D0545F417EC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB378C30-3274-4322-9C34-D0545F417EC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB378C30-3274-4322-9C34-D0545F417EC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB378C30-3274-4322-9C34-D0545F417EC8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
