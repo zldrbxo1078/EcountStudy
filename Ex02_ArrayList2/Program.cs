@@ -50,15 +50,7 @@ namespace Ex02_ArrayList2
             Console.Write("   Values:");
             PrintValues(myAL);
 
-            // Trim the ArrayList again.
-            myAL.TrimToSize();
-
-            // Displays the count, capacity and values of the ArrayList.
-            Console.WriteLine("After the second TrimToSize,");
-            Console.WriteLine("   Count    : {0}", myAL.Count);
-            Console.WriteLine("   Capacity : {0}", myAL.Capacity);
-            Console.Write("   Values:");
-            PrintValues(myAL);
+            
         }
     }
 }
