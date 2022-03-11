@@ -1,15 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.32126.315
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32210.238
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex01_OOP", "Ex01_OOP\Ex01_OOP.csproj", "{F4411DAF-CEFF-4EC4-B3EF-676C11E36CB9}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex02-OOP_overload", "Ex02-OOP_overload\Ex02-OOP_overload.csproj", "{CB9D109F-9F73-4B58-9FE0-AB841C8F5B5C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex03", "Ex03\Ex03.csproj", "{26E4CACB-CFB1-4C4E-BDB4-1A0AE4E75494}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex04_this", "..\..\Ex04_this\Ex04_this\Ex04_this.csproj", "{9EFBF5C0-B02F-45F9-BA1C-8CB4DA311367}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex05_Overriding", "Ex05_Overridind\Ex05_Overriding.csproj", "{C4654493-FD8B-472E-8CF0-62A9DC2E9743}"
 EndProject
@@ -57,10 +55,6 @@ Global
 		{26E4CACB-CFB1-4C4E-BDB4-1A0AE4E75494}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{26E4CACB-CFB1-4C4E-BDB4-1A0AE4E75494}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{26E4CACB-CFB1-4C4E-BDB4-1A0AE4E75494}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9EFBF5C0-B02F-45F9-BA1C-8CB4DA311367}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9EFBF5C0-B02F-45F9-BA1C-8CB4DA311367}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9EFBF5C0-B02F-45F9-BA1C-8CB4DA311367}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9EFBF5C0-B02F-45F9-BA1C-8CB4DA311367}.Release|Any CPU.Build.0 = Release|Any CPU
 		{C4654493-FD8B-472E-8CF0-62A9DC2E9743}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{C4654493-FD8B-472E-8CF0-62A9DC2E9743}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C4654493-FD8B-472E-8CF0-62A9DC2E9743}.Release|Any CPU.ActiveCfg = Release|Any CPU
