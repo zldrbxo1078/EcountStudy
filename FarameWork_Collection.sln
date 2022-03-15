@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex02_ArrayList2", "Ex02_Arr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hw_Bank", "Hw_Bank\Hw_Bank.csproj", "{8CA8D018-B1CC-4196-A4C6-9A178DE9AB72}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex09_Generic", "Ex09_Generic\Ex09_Generic.csproj", "{E0079F17-905F-493C-A29E-EA1053333889}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "hw_multipulication", "hw_multipulication\hw_multipulication.csproj", "{58149C8B-6362-498A-A047-835E2612341A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{8CA8D018-B1CC-4196-A4C6-9A178DE9AB72}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8CA8D018-B1CC-4196-A4C6-9A178DE9AB72}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8CA8D018-B1CC-4196-A4C6-9A178DE9AB72}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0079F17-905F-493C-A29E-EA1053333889}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0079F17-905F-493C-A29E-EA1053333889}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0079F17-905F-493C-A29E-EA1053333889}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0079F17-905F-493C-A29E-EA1053333889}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58149C8B-6362-498A-A047-835E2612341A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58149C8B-6362-498A-A047-835E2612341A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58149C8B-6362-498A-A047-835E2612341A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58149C8B-6362-498A-A047-835E2612341A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
