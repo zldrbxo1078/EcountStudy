@@ -11,21 +11,35 @@ namespace hw_make_Dos
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(args[0]);
             string path = args[0];
             if (args.Length < 1)
             {
-                Console.WriteLine("사용법 : *.exe [디렉토리 경로]");
+                Console.WriteLine("사용법 : *.exe [옵션] [디렉토리 경로]");
+                Console.WriteLine("[옵션] : -s");
                 return;
-            }else 
-            if (Directory.Exists(path))
-            {
-                Directory.Delete(path, true);
-                Console.WriteLine("디렉토리가 삭제되었습니다.");
             }
-            else
+            if (path.Trim() == "-s")
             {
-                Console.WriteLine("Directory Not Exist");
+                if (Directory.Exists(path))
+                {
+                    Console.WriteLine("디렉토리를 삭제하시겠습니까?");
+                    Console.WriteLine("Y / N");
+                    string input = Console.ReadLine();
+                    if (input == "Y")
+                    {
+                        File.Delete(path);
+                    }
+                    else
+                    {
+                        return;
+                    }
+                    Directory.Delete(path, true);
+                    Console.WriteLine("디렉토리가 삭제되었습니다.");
+                }
+                else
+                {
+                    Console.WriteLine("Directory Not Exist");
+                }
             }
         }
     }
