@@ -7,6 +7,7 @@ using System.Threading; //thread 추가하기
 
 namespace Ex04_Thread
 {
+   
     
     class Program
     {
